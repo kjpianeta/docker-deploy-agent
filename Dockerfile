@@ -66,8 +66,6 @@ RUN pip install python-novaclient \
 RUN yum install -y salt-minion java-1.8.0-openjdk
 
 RUN yum -y clean all
-ADD ./docker_entry_point.sh /
-
 
 CMD /bin/bash
 #ENTRYPOINT ["/opt/cisco/deployer/bin/docker_entry_point.sh"]
